@@ -1,6 +1,7 @@
-# Express.js MVC Server with Handlebars and Sneat Admin Template
+# Express.js MVC Server with Handlebars and Sneat Admin Template +  Built-in database-less Authentication 
 
-This repository contains an Express.js server structured in the MVC (Model-View-Controller) pattern, using Handlebars (hbs) for templating and incorporating the Sneat Admin Template for the frontend.
+This repository contains an Express.js server structured in the MVC (Model-View-Controller) pattern, using Handlebars (hbs) for templating and incorporating the Sneat Admin Template for the frontend with pre built in authentication by json. it uses cookies to store the user session.
+
 
 ## Table of Contents
 
