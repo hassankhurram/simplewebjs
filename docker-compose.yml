@@ -1,0 +1,28 @@
+services:
+  simple_web_server:
+    restart: unless-stopped
+    environment:
+      - PORT=${PORT}
+      - DEBUG=@opentelemetry*
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/usr/src/app
+      - ./node_modules:/usr/src/app/node_modules
+    ports:
+      - "${PORT}:${PORT}"
+
+  # mongo_db:
+  #   image: mongo:latest
+  #   restart: unless-stopped
+  #   environment:
+  #     - MONGO_INITDB_ROOT_USERNAME=mongoUser
+  #     - MONGO_INITDB_ROOT_PASSWORD=mongoPass
+  #   ports:
+  #     - "27017:27017"
+  #   volumes:
+  #     - mongo_data:/data/db
+
+volumes:
+  mongo_data:
