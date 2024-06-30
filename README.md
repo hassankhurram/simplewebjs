@@ -18,7 +18,7 @@ This repository contains an Express.js server structured in the MVC (Model-View-
 
    ```sh
     git clone https://github.com/hassankhurram/simplewebjs.git
-    cd simplewebjs **Install dependencies:**
+    cd simplewebjs
     ```
 
 2. **Install dependencies:**
